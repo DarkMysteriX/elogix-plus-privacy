@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>e-Logix+ User Manual</title>
+  <style>
+    :root { --bg: #f4f7fa; --card: #ffffff; --fg: #14213d; --mut: #5c6b7e; --acc: #0e8a92; --line: #e2e8f0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.6; }
+    header { background: var(--acc); color: #fff; padding: 32px 20px; text-align: center; }
+    header h1 { margin: 0 0 6px; font-size: 28px; }
+    header p { margin: 0; opacity: 0.92; font-size: 15px; }
+    nav { background: var(--card); border-bottom: 1px solid var(--line); padding: 12px 20px; text-align: center; position: sticky; top: 0; }
+    nav a { color: var(--fg); text-decoration: none; margin: 0 12px; font-weight: 600; font-size: 14px; }
+    nav a:hover { color: var(--acc); }
+    main { max-width: 860px; margin: 24px auto 60px; padding: 0 16px; }
+    section { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; }
+    h2 { margin-top: 0; color: var(--acc); font-size: 20px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+    h3 { margin: 18px 0 6px; font-size: 16px; }
+    ul, ol { padding-left: 20px; margin: 8px 0; }
+    li { margin-bottom: 6px; }
+    .tip { background: #eef8f8; border-left: 4px solid var(--acc); padding: 12px 14px; border-radius: 6px; margin-top: 12px; font-size: 14px; }
+    .warn { background: #fff5f5; border-left: 4px solid #d64545; padding: 12px 14px; border-radius: 6px; margin-top: 12px; font-size: 14px; }
+    kbd { background: #edf2f7; border: 1px solid #cbd5e1; border-radius: 4px; padding: 2px 6px; font-size: 12px; font-family: Consolas, monospace; }
+    footer { text-align: center; color: var(--mut); font-size: 13px; padding: 20px; }
+    footer a { color: var(--acc); font-weight: 600; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>e-Logix+ User Manual</h1>
+    <p>Quick-Start Guide for Access, Daily Operations, Multi-PC LAN Sharing &amp; Backups</p>
+  </header>
+
+  <nav>
+    <a href="#access">1. Access &amp; Setup</a>
+    <a href="#usage">2. Basic Usage</a>
+    <a href="#lan">3. Multi-PC LAN &amp; Backup</a>
+    <a href="#shortcuts">4. Shortcuts &amp; Support</a>
+  </nav>
+
+  <main>
+    <section id="access">
+      <h2>1. Access &amp; First-Time Setup</h2>
+      <h3>Create Your Company Admin Account</h3>
+      <ol>
+        <li>Launch <strong>e-Logix+</strong>. After activating your Microsoft Store subscription or 7-day free trial, the <strong>Create Company Admin Account</strong> screen appears.</li>
+        <li>Enter your <strong>Company Name</strong>, <strong>Full Name</strong>, <strong>Work Email / User ID</strong>, and a <strong>Master Password</strong> (8+ characters with letters and a number).</li>
+        <li>Tick <em>Start with sample data</em> only if you want to explore demo shipments first. You can safely clear demo data later in <strong>Settings &rarr; Data</strong>.</li>
+      </ol>
+
+      <h3>Add Staff Accounts &amp; Roles</h3>
+      <ol>
+        <li>Sign in as Admin and open <strong>Users</strong> from the left sidebar.</li>
+        <li>Click <strong>+ Add user</strong>, enter the employee's Name, User ID / Email, Role (Operations, Customs, Accounts, Sales, etc.), and Team.</li>
+        <li>Share the auto-generated temporary password with your staff member—they will be prompted to set their own password on first sign-in.</li>
+        <li>Use <em>Customize access area by area</em> to set module permissions to <strong>None</strong>, <strong>View</strong>, <strong>Edit</strong>, or <strong>Full</strong> (Delete &amp; Import).</li>
+      </ol>
+    </section>
+
+    <section id="usage">
+      <h2>2. Basic Usage &amp; Daily Workflow</h2>
+      <h3>Core Shipment Lifecycle</h3>
+      <ul>
+        <li>Create a shipment from <strong>Quotations</strong> or click <strong>+ New</strong> (top bar) &rarr; <strong>Jobs</strong> to generate a unique <strong>Job No</strong> (e.g., <code>JOB-2026-0001</code>).</li>
+        <li>Every operational document—<strong>Shipping Instruction (SI)</strong>, <strong>Bill of Lading (BL)</strong>, <strong>Customs Order</strong>, <strong>Arrival Notice</strong>, <strong>Delivery Order</strong>, and <strong>Invoices</strong>—links through the <strong>Job No</strong>.</li>
+        <li>Select the <strong>Job No</strong> first on any linked form to auto-fill Shipper, Consignee, POL, POD, Vessel, and ETA.</li>
+      </ul>
+
+      <h3>Job 360 Workspace</h3>
+      <ul>
+        <li>Double-click any row in <strong>Jobs</strong> (or click <strong>Job 360</strong>) to view the complete shipment in one place.</li>
+        <li>Switch across the 4 tabs: <strong>Documents</strong> (create, preview, or download A4 PDFs), <strong>Finance &amp; P&amp;L</strong> (Sell/Buy invoices and net margin), <strong>Shipment Details</strong>, and <strong>Vault &amp; Activity</strong> (uploaded PDFs/scans and full audit history).</li>
+      </ul>
+
+      <h3>PDFs &amp; Document Vault</h3>
+      <ul>
+        <li>Use <strong>Preview PDF</strong> to review or <strong>Download PDF</strong> to save clean A4 documents.</li>
+        <li>Upload scanned BLs, Commercial Invoices, or Packing Lists inside <strong>Job 360 &rarr; Vault &amp; Activity</strong>. Files are automatically stored inside <code>&lt;Data Folder&gt;/Jobs/&lt;Job_No&gt;/</code>.</li>
+      </ul>
+    </section>
+
+    <section id="lan">
+      <h2>3. Multi-PC Office LAN &amp; Backups</h2>
+      <h3>Share Live Data Across Office PCs (LAN)</h3>
+      <ol>
+        <li>On your main office PC, share one folder on your local network (e.g., <code>\\OFFICE-PC\eLogixShared</code>) with <strong>Read/Write</strong> permission.</li>
+        <li>On <strong>PC 1</strong>, open <strong>Settings &rarr; Data &rarr; Local &amp; LAN folders</strong>, click <strong>Change folder…</strong>, choose the shared LAN folder, and click <strong>YES</strong> to copy your database and Jobs vault there.</li>
+        <li>On <strong>PCs 2–5</strong>, click <strong>Change folder…</strong> (or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd> on the Login screen) and select the exact same shared folder.</li>
+      </ol>
+      <div class="tip">
+        All connected office PCs automatically sync changes every <strong>4 seconds</strong> and share all uploaded Job PDFs.
+      </div>
+
+      <h3>Safe Cloud Backups</h3>
+      <div class="warn">
+        <strong>Important:</strong> Never point your live <strong>Data folder</strong> directly inside a OneDrive, Google Drive, or Dropbox sync folder—cloud file locks can corrupt a live database.
+      </div>
+      <ul>
+        <li>Keep your live Data folder on a <strong>Local drive</strong> or <strong>Office LAN</strong> share.</li>
+        <li>Enable <strong>Settings &rarr; Cloud Backup &amp; Sync</strong> (Google Drive, OneDrive, or Local Sync Folder) on <strong>1 main PC</strong> for automatic, corruption-free backups.</li>
+        <li>Daily automatic backups keep the last 10 snapshots in your <code>backups</code> folder and can be restored anytime via <strong>Settings &rarr; Data &rarr; Restore</strong>.</li>
+      </ul>
+    </section>
+
+    <section id="shortcuts">
+      <h2>4. Keyboard Shortcuts &amp; Full Support</h2>
+      <ul>
+        <li><kbd>Ctrl</kbd> + <kbd>K</kbd> — Quick search &amp; jump to any module or record</li>
+        <li><kbd>F1</kbd> — Open this User Manual anytime</li>
+        <li><kbd>Tab</kbd> / <kbd>Enter</kbd> — Move smoothly between form fields</li>
+        <li><kbd>Ctrl</kbd> + <kbd>S</kbd> — Save the open form</li>
+        <li><kbd>Esc</kbd> — Close the active dialog or popup window</li>
+        <li><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd> — Switch Local / LAN workspace folder from the Login screen</li>
+      </ul>
+
+      <h3>Dedicated Customer Support</h3>
+      <p>
+        Need assistance with setup, multi-PC LAN sharing, questions, or feature suggestions? We provide full support for all e-Logix+ users.
+        Email us anytime at <a href="mailto:darkmysterix@gmail.com"><strong>darkmysterix@gmail.com</strong></a>.
+        For faster technical help, open <strong>About</strong> inside the app and click <strong>Copy system info</strong> or <strong>Diagnostic log</strong> to include with your email.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; e-Logix+ &middot; Developed by Dark MysteriX &middot; <a href="mailto:darkmysterix@gmail.com">darkmysterix@gmail.com</a>
+  </footer>
+</body>
+</html>
